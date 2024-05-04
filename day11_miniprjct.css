@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+.main_box{
+    background: url("photo.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+.btn_one{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.sidebar_menu{
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s linear;
+}
+.main_box .menu li{
+    margin:10px 10px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    list-style: none;
+}
+.main_box .menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+.sidebar_menu .logo {
+    position: absolute;
+    left: 60px;
+    line-height: 70px;
+    /* height: 60px; */
+    width: 80%;
+    margin: 8px;
+    cursor: pointer;
+}
+.sidebar_menu .logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+}
+.main_box .btn_two{
+    position: absolute;
+    top: 30px;
+    left: 275px;
+}
+.social_media{
+    position: absolute;
+    top: 600px;
+    left: 25%;
+}
+.social_media a{
+    color: white;
+    margin: 5px;
+}
+#check{
+    display:none;
+}
+.main_box .menu li:hover{
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+.social_media a i:hover{
+    font-size:1.5em;
+    background: gray;
+}
+.main_box .menu ul{
+    margin-top: 80px;
+}
+.main_box .btn_two :hover{
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+#check:checked ~ .sidebar_menu{
+    left: 0;
+}
+#check:checked ~.btn_one i{
+    opacity: 0;
+}
+.btn_one:hover{
+    font-size:2em;
+    transition: all 0.3s linear;
+}
